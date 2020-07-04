@@ -1894,10 +1894,10 @@ span.price {
 	line-height: 1;
 	width: 10px;
 }
-.fa-stack-1x, .fa-stack-x {
+.fa-stack-1x, .fa-stack-1x {
 	font-size: 13px;
 }
-.fa.fa-star-o.fa-stack-1x, .fa.fa-star.fa-stack-x {
+.fa.fa-star-o.fa-stack-1x, .fa.fa-star.fa-stack-1x {
 	color: #BDBDBD;
 }
 .fa.fa-star.fa-stack-1x {
