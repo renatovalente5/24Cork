@@ -5,7 +5,7 @@
 <head>
 <!-- =====  BASIC PAGE NEEDS  ===== -->
 <meta charset="utf-8">
-<title>Batota</title>
+<title>24Cork</title>
 <!-- =====  SEO MATE  ===== -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="">
@@ -123,8 +123,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-menu">
           <ul class="nav navbar-nav navbar-left pull-right" data-in="fadeInDown" data-out="fadeOutUp">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li class="dropdown megamenu-fw"> <a href="category_page.html" class="dropdown-toggle" data-toggle="dropdown">Collection</a>
+            <li class="active"><a href="index.html" class="lang" key="_Início">Início</a></li>
+            <li class="dropdown megamenu-fw"> <a href="category_page.html" class="dropdown-toggle lang" key="_Coleção" data-toggle="dropdown">Coleção</a>
               <ul class="dropdown-menu megamenu-content" role="menu">
                 <li>
                   <div class="row">
@@ -197,9 +197,9 @@
                 </li>
               </ul>
             </li>
-            <li class="dropdown"> <a href="category_page.html" class="dropdown-toggle" data-toggle="dropdown">Products</a>
-              <ul class="dropdown-menu">
-                <li> <a href="category_page.html">List of products</a></li>
+            <li class="dropdown"> <a href="category_page.html" class="dropdown-toggle lang" key="_Produtos" data-toggle="dropdown">Produtos</a>
+              <ul class="dropdown-menu" style="max-width: 160px; min-width: 160px;">
+                <li> <a href="category_page.html" class="lang" key="_Lista_de_Produtos">Lista de Produtos</a></li>
                 <!--<li> <a href="category_page_3col.html">3colunm</a></li>-->
                 <!--<li> <a href="category_page_left.html">List of products with search</a></li>--> <!--Usar esta mais tarde-->
                 <!--<li> <a href="category_page_right.html">3colunm Right Sidebar</a></li>-->
@@ -223,7 +223,13 @@
                 <li> <a href="wishlist.html">Wishlist</a></li>
               </ul>
             </li>-->
-            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="contact_us.html" class="lang" key="_Contactos">Contactos</a></li>
+            <li class="dropdown"> <a href="#" class="dropdown-toggle lang" key="_PT" data-toggle="dropdown">PT</a>
+              <ul class="dropdown-menu" style="max-width: 80px; min-width: 80px;">
+                <li><a class="translate" id="pt"><img src="images/portugal.png">&nbsp;&nbsp;PT</a></li>
+                <li><a class="translate" id="en"><img src="images/English-icon.gif">&nbsp;&nbsp;EN</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
         <!-- /.navbar-collapse --> 
@@ -274,20 +280,20 @@
       <div class="item">
         <div class="banner-info container">
         <div class="banner-inner">
-          <div class="text1">Modern Art</div>
-          <div class="text2"> up to 30% off</div>
-          <div class="text3"> Shop the latest collection</div>
-          <div class="btn-banner"> <a href="contact_us.html">Contact Us Now</a></div>
+          <div class="text1 lang" key="_Malas"> Malas</div>
+          <div class="text2 lang" key="_Malas"> Malas</div>
+          <!-- <div class="text3" > Shop the latest collection</div> -->
+          <div class="btn-banner"> <a href="contact_us.html" class="lang" key="_Contacte-nos">Contacte-nos</a></div>
         </div>
       </div>
         <a href="#"><img src="images/malas/bannercapa.jpg" alt="Main Banner" class="img-responsive" /></a></div>
       <div class="item">
         <div class="banner-info container">
         <div class="banner-inner2">
-          <div class="text1"> free shipping</div>
-          <div class="text2">decoration</div>
-          <div class="text3"> Shop tha latest  collection of hendicraft </div>
-          <div class="btn-banner"> <a href="contact_us.html">Contact Us Now</a></div>
+          <div class="text1 lang" key="_Chapeús"> Chapeús</div>
+          <div class="text2 lang" key="_Chapeús"> Chapeús</div>
+          <!-- <div class="text3"> Shop tha latest collection </div> -->
+          <div class="btn-banner"> <a href="contact_us.html" class="lang" key="_Contacte-nos">Contacte-nos</a></div>
         </div>
       </div>
         <a href="#"><img src="images/malas/bannercapa2.jpg" alt="Main Banner" class="img-responsive" /></a></div>
@@ -295,7 +301,7 @@
   </div>
   <!-- =====  BANNER END  ===== --> 
   <!-- =====  SUB BANNER  STRAT ===== -->
-  <div class="container">
+  <!-- <div class="container">
     <div class="row">
       <div class="cms_banner">
         <div class="col-xs-6 col-sm-6 col-md-6 mt_30">
@@ -330,7 +336,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- =====  SUB BANNER END  ===== --> 
   <!-- =====  CONTAINER START  ===== -->
   <div class="container">
@@ -339,13 +345,13 @@
         <!-- =====  PRODUCT TAB  ===== -->
         <div id="product-tab" class="mtb_80">
           <div class="heading-part text-center mb_20 ">
-            <h2 class="main_title">Our Products</h2>
+            <h2 class="main_title lang" key="_Nossos_Produtos">Nossos Produtos</h2>
           </div>
           <ul class="nav text-right mb_10">
             <li class="active"> <a href="#nArrivals" data-toggle="tab">Popular</a> </li>
-            <li><a href="#Bestsellers" data-toggle="tab">Bestsellers</a> </li>
+            <!-- <li><a href="#Bestsellers" data-toggle="tab">Bestsellers</a> </li> -->
             <!-- <li><a href="#Featured" data-toggle="tab">Featured</a> </li> -->
-            <li><a href="#newpro" data-toggle="tab">New Product</a> </li>
+            <li><a href="#newpro" data-toggle="tab" class="lang" key="_Novos_Produtos">Novos Produtos</a> </li>
           </ul>
           <div class="tab-content clearfix box">
             <div class="tab-pane active" id="nArrivals">
@@ -1120,7 +1126,7 @@
         <div class="blog owl-carousel ">
           <div class="item">
             <div class="box-holder">
-              <div class="thumb post-img"><a href="#"> <img src="images/blog/blog_img_01.jpg" alt="Batota"> </a> </div>
+              <div class="thumb post-img"><a href="#"> <img src="images/blog/blog_img_01.jpg" alt="24Cork"> </a> </div>
               <div class="post-info">
                 <h3 class="mb_10"> <a class="sub_title" href="single_blog.html">Fashions fade, style is eternal</a> </h3>
                 <p class="mb_20">Aliquam egestas pellentesque est. Etiam aorci Nulla id enim feugiat ligula corper scelerisque.</p>
@@ -1134,7 +1140,7 @@
           </div>
           <div class="item">
             <div class="box-holder">
-              <div class="thumb post-img"><a href="#"> <img src="images/blog/blog_img_02.jpg" alt="Batota"> </a></div>
+              <div class="thumb post-img"><a href="#"> <img src="images/blog/blog_img_02.jpg" alt="24Cork"> </a></div>
               <div class="post-info">
                 <h3 class="mb_10"> <a class="sub_title" href="single_blog.html">Fashions fade, style is eternal</a> </h3>
                 <p class="mb_20">Aliquam egestas pellentesque est. Etiam aorci Nulla id enim feugiat ligula corper scelerisque.</p>
@@ -1148,7 +1154,7 @@
           </div>
           <div class="item">
             <div class="box-holder">
-              <div class="thumb post-img"><a href="#"> <img src="images/blog/blog_img_03.jpg" alt="Batota"> </a></div>
+              <div class="thumb post-img"><a href="#"> <img src="images/blog/blog_img_03.jpg" alt="24Cork"> </a></div>
               <div class="post-info">
                 <h3 class="mb_10"> <a class="sub_title" href="single_blog.html">Fashions fade, style is eternal</a> </h3>
                 <p class="mb_20">Aliquam egestas pellentesque est. Etiam aorci Nulla id enim feugiat ligula corper scelerisque.</p>
@@ -1162,7 +1168,7 @@
           </div>
           <div class="item">
             <div class="box-holder">
-              <div class="thumb post-img"><a href="#"> <img src="images/blog/blog_img_04.jpg" alt="Batota"> </a></div>
+              <div class="thumb post-img"><a href="#"> <img src="images/blog/blog_img_04.jpg" alt="24Cork"> </a></div>
               <div class="post-info">
                 <h3 class="mb_10"> <a class="sub_title" href="single_blog.html">Fashions fade, style is eternal</a> </h3>
                 <p class="mb_20">Aliquam egestas pellentesque est. Etiam aorci Nulla id enim feugiat ligula corper scelerisque.</p>
@@ -1176,7 +1182,7 @@
           </div>
           <div class="item">
             <div class="box-holder">
-              <div class="thumb post-img"><a href="#"> <img src="images/blog/blog_img_05.jpg" alt="Batota"> </a></div>
+              <div class="thumb post-img"><a href="#"> <img src="images/blog/blog_img_05.jpg" alt="24Cork"> </a></div>
               <div class="post-info">
                 <h3 class="mb_10"> <a class="sub_title" href="single_blog.html">Fashions fade, style is eternal</a> </h3>
                 <p class="mb_20">Aliquam egestas pellentesque est. Etiam aorci Nulla id enim feugiat ligula corper scelerisque.</p>
@@ -1190,7 +1196,7 @@
           </div>
           <div class="item">
             <div class="box-holder">
-              <div class="thumb post-img"><a href="#"> <img src="images/blog/blog_img_06.jpg" alt="Batota"> </a></div>
+              <div class="thumb post-img"><a href="#"> <img src="images/blog/blog_img_06.jpg" alt="24Cork"> </a></div>
               <div class="post-info">
                 <h3 class="mb_10"> <a class="sub_title" href="single_blog.html">Fashions fade, style is eternal</a> </h3>
                 <p class="mb_20">Aliquam egestas pellentesque est. Etiam aorci Nulla id enim feugiat ligula corper scelerisque.</p>
@@ -1299,7 +1305,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <div class="copyright-part">Copyright © 2020 - Created by 24Cork</div>
+          <div class="copyright-part lang" key="_Creado_por">Copyright © 2020 - Criado por 24Cork</div>
         </div>
         <div class="col-sm-6">
           <div class="payment-icon text-right">
@@ -1328,3 +1334,30 @@
 <script src="js/custom.js"></script>
 </body>
 </html>
+
+<script src="language/en.js"> </script>
+<script src="language/pt.js"> </script>
+
+<script>
+  var arrLang = {
+    "en": En(),
+    "pt": Pt()
+  }; 
+  
+  $(document).ready(function() {
+  // The default language is Portuguese
+  var lang = "pt";
+  $(".lang").each(function(index, element) {
+    $(this).text(arrLang[lang][$(this).attr("key")]);
+  });
+});
+
+// get/set the selected language
+$(".translate").click(function() {
+  var lang = $(this).attr("id");
+
+  $(".lang").each(function(index, element) {
+    $(this).text(arrLang[lang][$(this).attr("key")]);
+  });
+});
+</script>

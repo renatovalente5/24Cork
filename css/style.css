@@ -1,6 +1,6 @@
 /*------------------------------------------------------------------
 
-Project:		Batota E-Commerce Bootsrap Responsive Template
+Project:		24Cork E-Commerce Bootsrap Responsive Template
 Version:		1.1
 Last change:	24/03/18
 Created by: 	24Cork
@@ -1864,7 +1864,7 @@ span.price {
 	background: transparent none repeat scroll 0 0;
 	border: 0;
 	box-shadow: none;
-	padding: 3px;
+	padding: 3px 30px 4px 4px;;
 	height: auto;
 }
 .pagination-nav ul li a {

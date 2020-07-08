@@ -1,6 +1,46 @@
 <?php
+
+if ( isset($_POST['submit']) ) {
+
+    // Dados de autenticação SMTP
+    $smtpinfo['host'] = 'localhost';
+    $smtpinfo['port'] = '25';
+    $smtpinfo['auth'] = true;
+    $smtpinfo['username'] = 'info@24cork.com'; /* Altere este campo para o email do seu domínio */
+    $smtpinfo['password'] = 'Ze.24cork'; /* Altere este campo para a password do email */
+    
+    // Dados recebidos do formulário
+    $nome = $_POST['name'];
+    $email = $_POST['email'];
+    $mensagem = $_POST['message'];
+    
+    // Inclusão de ficheiro PEAR. Certifique-se que o PEAR está activado no seu alojamento
+    require_once "Mail.php";
+    
+    // Corpo da mensagem
+    $body = "Nome: ".$nome;
+    $body.= "\n";
+    $body.= nl2br($mensagem);
+    
+    $headers = array ('From' => $email,
+    'To' => $smtpinfo["username"],
+    'Subject' => 'Pedido de contacto');
+    
+    $mail_object = Mail::factory('smtp', $smtpinfo);
+    
+    $mail = $mail_object->send($smtpinfo["username"], $headers, $body);
+    
+
+    if ( PEAR::isError($mail) ) {
+    echo $mail->getMessage();
+    } else {
+    echo '<b>O seu comentario foi enviado com sucesso.</b>';
+    }
+    
+}
+
 $recipient_email    = "renato.lima.valente@gmail.com";  //recepient
-$from_email         = "renato.l.valente@gmail.com"; //from email using site domain.
+$from_email         = "corkcom"; //from email using site domain.
 
 
 if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
