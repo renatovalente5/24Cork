@@ -102,7 +102,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-menu">
           <ul class="nav navbar-nav navbar-left pull-right" data-in="fadeInDown" data-out="fadeOutUp">
-            <li class="active"><a href="index.html" class="lang" key="_Início">Início</a></li>
+            <li><a href="index.html" class="lang" key="_Início">Início</a></li>
             <li class="dropdown megamenu-fw"> <a href="category_page.html" class="dropdown-toggle lang" key="_Coleção" data-toggle="dropdown">Coleção</a>
               <ul class="dropdown-menu megamenu-content" role="menu">
                 <li>
@@ -176,7 +176,7 @@
                 </li>
               </ul>
             </li>
-            <li class="dropdown"> <a href="category_page.html" class="dropdown-toggle lang" key="_Produtos" data-toggle="dropdown">Produtos</a>
+            <li class="dropdown active"> <a href="category_page.html" class="dropdown-toggle lang" key="_Produtos" data-toggle="dropdown">Produtos</a>
               <ul class="dropdown-menu" style="max-width: 160px; min-width: 160px;">
                 <li> <a href="category_page.html" class="lang" key="_Lista_de_Produtos">Lista de Produtos</a></li>
                 <!--<li> <a href="category_page_3col.html">3colunm</a></li>-->
@@ -727,6 +727,15 @@
 <script src="language/pt.js"> </script>
 
 <script>
+function LanguagePT(){
+  document.cookie = "name=pt";
+}
+
+function LanguageEN(){
+  document.cookie = "name=en";
+}
+
+
   var arrLang = {
     "en": En(),
     "pt": Pt()
@@ -734,21 +743,23 @@
   
   $(document).ready(function() {
   // The default language is Portuguese
-  var lang = "pt";
-  $(".lang").each(function(index, element) {
-    $(this).text(arrLang[lang][$(this).attr("key")]);
+    var lang = "pt";
+    $(".lang").each(function(index, element) {
+      $(this).text(arrLang[lang][$(this).attr("key")]);
+    });
   });
-});
 
-// get/set the selected language
-$(".translate").click(function() {
-  var lang = $(this).attr("id");
+  // get/set the selected language
+  $(".translate").click(function() {
+    var lang = $(this).attr("id");
 
-  $(".lang").each(function(index, element) {
-    $(this).text(arrLang[lang][$(this).attr("key")]);
+    $(".lang").each(function(index, element) {
+      $(this).text(arrLang[lang][$(this).attr("key")]);
+    });
   });
-});
+
 </script>
+
 <script>
 
 //Order List of Products By Price

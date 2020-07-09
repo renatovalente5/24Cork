@@ -19,6 +19,8 @@ function Pt() {
         "_Predefinido": "Predefinido",
         "_Price_Low": "Preço (Baixo > Alto)",
         "_Price_High": "Preço (Alto > Baixo)",
+        "_Produto_Detalhes": "Produto Detalhes",
+
     }
 }; 
 

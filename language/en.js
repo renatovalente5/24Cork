@@ -19,6 +19,9 @@ function En() {
         "_Predefinido": "Default",
         "_Price_Low": "Price (Low > High)",
         "_Price_High": "Price (High > Low)",
+        "_Produto_Detalhes": "Product Details",
+        
     }
 }; 
+
 
