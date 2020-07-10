@@ -1162,8 +1162,8 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         float: right;
         font-size: 16px;
         margin-left: 10px;
-       position: relative;
-       right: -15px;
+        position: relative;
+        right: -15px;
     }
     
     nav.navbar.bootsnav .dropdown .megamenu-content .col-menu:last-child .title{

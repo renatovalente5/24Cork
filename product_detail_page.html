@@ -33,7 +33,7 @@
 <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 </head>
 
-<body class="shop-detail" onload="Language()">
+<body class="shop-detail">
 <!-- =====  LODER  ===== -->
 <div class="loder"></div>
 <div class="wrapper"> 
@@ -260,7 +260,7 @@
     <ul>
       <li><a href="index.html" class="lang" key="_Início" style="color: gray;">Início</a></li>
       <li><a href="category_page.html" class="lang" key="_Produtos" style="color: gray;">Produtos</a></li>
-      <li class="active" class="lang" key="_Produto_Detalhes">Produto Detalhes</li>
+      <li class="active lang" key="_Produto_Detalhes">Produto Detalhes</li>
     </ul>
   </div>
   <!-- =====  BREADCRUMB END===== --> 
@@ -642,6 +642,7 @@
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/jquery.magnific-popup.js"></script> 
 <script src="js/custom.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
 
 <script src="language/en.js"> </script>
 <script src="language/pt.js"> </script>
@@ -666,7 +667,6 @@ function Language(){
   // The default language is Portuguese
     var lang = Cookies.get('lang'); // => 'value'
     //var lang = "pt";
-    alert("lang: " + lang);
     $(".lang").each(function(index, element) {
       $(this).text(arrLang[lang][$(this).attr("key")]);
     });
@@ -681,6 +681,7 @@ function Language(){
     });
   });
 }
+window.onload = Language();
 </script>
 
 </body>

@@ -32,7 +32,7 @@
 <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 </head>
-<body onload="Language()">
+<body>
 <!-- =====  LODER  ===== -->
 <div class="loder"></div>
 <div class="wrapper"> 
@@ -419,11 +419,14 @@
 <script src="js/bootsnav.js "></script> 
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/jquery.magnific-popup.js"></script> 
-<script src="js/custom.js"></script> 
+<script src="js/custom.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script> 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOf5hKvcSfJkLzZJWxHGcKFuu8BRJSlsc">
   </script> 
 <script src="js/map.js"></script> 
 <script src="js/mail.js"></script>
+</body>
+</html>
 
 <script src="language/en.js"> </script>
 <script src="language/pt.js"> </script>
@@ -448,7 +451,6 @@ function Language(){
   // The default language is Portuguese
     var lang = Cookies.get('lang'); // => 'value'
     //var lang = "pt";
-    alert("lang: " + lang);
     $(".lang").each(function(index, element) {
       $(this).text(arrLang[lang][$(this).attr("key")]);
     });
@@ -463,7 +465,5 @@ function Language(){
     });
   });
 }
+window.onload = Language();
 </script>
-
-</body>
-</html>

@@ -666,7 +666,6 @@ function Language(){
   // The default language is Portuguese
     var lang = Cookies.get('lang'); // => 'value'
     //var lang = "pt";
-    alert("lang: " + lang);
     $(".lang").each(function(index, element) {
       $(this).text(arrLang[lang][$(this).attr("key")]);
     });
@@ -681,6 +680,7 @@ function Language(){
     });
   });
 }
+window.onload = Language();
 </script>
 
 </body>
