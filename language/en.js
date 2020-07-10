@@ -20,6 +20,13 @@ function En() {
         "_Price_Low": "Price (Low > High)",
         "_Price_High": "Price (High > Low)",
         "_Produto_Detalhes": "Product Details",
+        "_Comprimento": "Length:",
+        "_Largura": "Width:",
+        "_Altura": "Height:",
+        "_Código_Produto": "Product Code:",
+        "_Stock": "Stock:",
+        "_Disponivel" : "In Stock",
+        "_Indisponivel" : "Out Stock",
         
     }
 }; 

@@ -20,7 +20,14 @@ function Pt() {
         "_Price_Low": "Preço (Baixo > Alto)",
         "_Price_High": "Preço (Alto > Baixo)",
         "_Produto_Detalhes": "Produto Detalhes",
-
+        "_Comprimento": "Comprimento:",
+        "_Largura": "Largura:",
+        "_Altura": "Altura:",
+        "_Código_Produto": "Código do Produto:",
+        "_Stock": "Stock:",
+        "_Disponivel" : "Disponivel",
+        "_Inisponivel" : "Indisponivel",
+        
     }
 }; 
 
