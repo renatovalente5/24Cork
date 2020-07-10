@@ -33,8 +33,7 @@
 <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 </head>
-<body>
-<!-- =====  LODER  ===== -->
+<body onload="Language()">
 <!-- <div class="loder"></div>
 <div class="wrapper">
   <div id="subscribe-me" class="modal animated fade in" role="dialog" data-keyboard="true" tabindex="-1">
@@ -226,8 +225,8 @@
             <li><a href="contact_us.html" class="lang" key="_Contactos">Contactos</a></li>
             <li class="dropdown"> <a href="#" class="dropdown-toggle lang" key="_PT" data-toggle="dropdown">PT</a>
               <ul class="dropdown-menu" style="max-width: 80px; min-width: 80px;">
-                <li><a class="translate" id="pt" onclick="Language()"><img src="images/portugal.png">&nbsp;&nbsp;PT</a></li>
-                <li><a class="translate" id="en" onclick="Language()"><img src="images/English-icon.gif">&nbsp;&nbsp;EN</a></li>
+                <li><a class="translate" id="pt" onclick="LanguagePT()"><img src="images/portugal.png">&nbsp;&nbsp;PT</a></li>
+                <li><a class="translate" id="en" onclick="LanguageEN()"><img src="images/English-icon.gif">&nbsp;&nbsp;EN</a></li>
               </ul>
             </li>
           </ul>
@@ -370,7 +369,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">Mala Cortiça</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                   <div class="item">
@@ -385,7 +384,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">Mala Cortiça</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                 </div>
@@ -402,7 +401,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                   <div class="item">
@@ -417,7 +416,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                 </div>
@@ -435,7 +434,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                   <div class="item">
@@ -450,7 +449,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                 </div>
@@ -467,7 +466,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                   <div class="item">
@@ -482,7 +481,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                 </div>
@@ -499,7 +498,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                   <div class="item">
@@ -514,7 +513,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                 </div>
@@ -531,7 +530,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                   <div class="item">
@@ -546,7 +545,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                 </div>
@@ -567,7 +566,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                   <div class="item">
@@ -582,7 +581,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                 </div>
@@ -599,7 +598,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                   <div class="item">
@@ -614,7 +613,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                 </div>
@@ -631,7 +630,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                   <div class="item">
@@ -646,7 +645,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                 </div>
@@ -663,7 +662,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                   <div class="item">
@@ -678,7 +677,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                 </div>
@@ -695,7 +694,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                   <div class="item">
@@ -710,7 +709,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                 </div>
@@ -727,7 +726,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                   <div class="item">
@@ -742,7 +741,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                 </div>
@@ -763,7 +762,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                   <div class="item">
@@ -778,7 +777,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                 </div>
@@ -795,7 +794,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                   <div class="item">
@@ -810,7 +809,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                 </div>
@@ -827,7 +826,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                   <div class="item">
@@ -842,7 +841,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                 </div>
@@ -859,7 +858,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                   <div class="item">
@@ -874,7 +873,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                 </div>
@@ -891,7 +890,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                   <div class="item">
@@ -906,7 +905,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                 </div>
@@ -923,7 +922,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                   <div class="item">
@@ -938,7 +937,7 @@
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                        <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                        <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
                     </div>
                   </div>
                 </div>
@@ -1022,7 +1021,7 @@
                 <div class="caption product-detail text-center">
                   <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                   <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                  <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                  <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
               </div>
             </div>
           </div>
@@ -1039,7 +1038,7 @@
                 <div class="caption product-detail text-center">
                   <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                   <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                  <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                  <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
               </div>
             </div>
           </div>
@@ -1057,7 +1056,7 @@
                 <div class="caption product-detail text-center">
                   <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                   <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                  <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                  <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
               </div>
             </div>
           </div>
@@ -1074,7 +1073,7 @@
                 <div class="caption product-detail text-center">
                   <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                   <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                  <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                  <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
               </div>
             </div>
           </div>
@@ -1091,7 +1090,7 @@
                 <div class="caption product-detail text-center">
                   <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                   <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                  <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                  <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
               </div>
             </div>
           </div>
@@ -1108,7 +1107,7 @@
                 <div class="caption product-detail text-center">
                   <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                   <!--<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> </div>-->
-                  <span class="price"><span class="amount"><span class="currencySymbol">€</span>30.00</span> </span> </div>
+                  <span class="price"><span class="amount">30.00<span class="currencySymbol">€</span></span> </span> </div>
               </div>
             </div>
           </div>
@@ -1214,7 +1213,7 @@
   </div> -->
   <!-- =====  BLOG END ===== --> 
   <!-- =====  BRAND START  ===== -->
-  <div class="container">
+  <!-- <div class="container">
     <div class="row">
       <div class="col-sm-12 mt_80" ">
         <div class="brand owl-carousel ">
@@ -1230,20 +1229,20 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- =====  BRAND END  ===== --> 
   <!-- =====  FOOTER START  ===== -->
-  <div class="footer mt_80 ptb_80">
+  <div class="footer mt_80 ptb_40">
     <div class="container">
       <div class="row">
         <div class="col-md-3 footer-block">
           <div class="content_footercms_right">
             <div class="footer-contact">
-              <h6 class="footer-title ptb_20">Contact Us</h6>
+              <h6 class="footer-title ptb_20">Contactos</h6>
               <ul>
-                <li>Offices Addresss: 218, Drimlend Building Sarthana jakatnaka, Surat City Gujarat-395013 INDIA</li>
-                <li>+91 0987-654-321</li>
-                <li>Contact@yourcompany.com</li>
+                <!-- <li>Offices Addresss: 218, Drimlend Building Sarthana jakatnaka, Surat City Gujarat-395013 INDIA</li> -->
+                <li>(+351) <b>912 345 678</b></li>
+                <li>info@24cork.com</li>
               </ul>
               <div class="social_icon">
                 <ul>
@@ -1260,43 +1259,43 @@
         <div class="col-md-2 footer-block">
           <h6 class="footer-title ptb_20">Categories</h6>
           <ul>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Footwear</a></li>
-            <li><a href="#">Jewellery</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Carteiras</a></li>
+            <li><a href="#">Mochilas</a></li>
+            <li><a href="#">Necessaires</a></li>
+            <!-- <li><a href="#">Tira Colos</a></li> -->
+            <!-- <li><a href="#">Accessories</a></li>
+            <li><a href="#">Accessories</a></li> -->
           </ul>
         </div>
         <div class="col-md-2 footer-block">
-          <h6 class="footer-title ptb_20">Information</h6>
+          <h6 class="footer-title ptb_20">&nbsp;</h6>
           <ul>
-            <li><a href="contact.html">Specials</a></li>
-            <li><a href="#">New Products</a></li>
-            <li><a href="#">Best Sellers</a></li>
-            <li><a href="#">Our Stores</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2 footer-block">
-          <h6 class="footer-title ptb_20">My Account</h6>
-          <ul>
-            <li><a href="#">Checkout</a></li>
-            <li><a href="#">My Account</a></li>
-            <li><a href="#">My Orders</a></li>
-            <li><a href="#">My Credit Slips</a></li>
+            <li><a href="#">Pastas</a></li>
+            <li><a href="#">Colsas de Cintura</a></li>
+            <li><a href="#">Telemóveis C-Fita</a></li>
+            <!-- <li><a href="#">My Credit Slips</a></li>
             <li><a href="#">My Addresses</a></li>
-            <li><a href="#">My Personal Info</a></li>
+            <li><a href="#">My Personal Info</a></li> -->
           </ul>
         </div>
+        <div class="col-md-2 footer-block">
+          <h6 class="footer-title ptb_20">&nbsp;</h6>
+          <ul>
+            <li><a href="contact.html">Tira Colos</a></li>
+            <!-- <li><a href="#">New Products</a></li>
+            <li><a href="#">Best Sellers</a></li> -->
+            <!-- <li><a href="#">Our Stores</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Contact Us</a></li> -->
+          </ul>
+        </div> 
         <div class="col-md-3">
-          <h6 class="ptb_20">SIGN UP OUR NEWSLETTER</h6>
+          <!-- <h6 class="ptb_20">SIGN UP OUR NEWSLETTER</h6>
           <p class="mt_10 mb_20">Be sure to follow our blog and sign up for all of our mailing updates!</p>
           <div class="form-group">
             <input class="mb_20" type="text" placeholder="Enter Your Email Address">
             <button class="btn">Subscribe</button>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -1341,11 +1340,13 @@
 
 <script>
   function LanguagePT(){
-  document.cookie = "name=pt";
+    Cookies.set('lang', 'pt')
+    Language();
 }
 
 function LanguageEN(){
-  alert(document.cookie);
+  Cookies.set('lang', 'en')
+  Language();
 }
 function Language(){
   var arrLang = {
@@ -1355,10 +1356,9 @@ function Language(){
   
   $(document).ready(function() {
   // The default language is Portuguese
-    var lang = "pt";
-    Cookies.set('name', 'value')
-    var co = Cookies.get('name') // => 'value'
-    alert("name " + co);
+    var lang = Cookies.get('lang'); // => 'value'
+    //var lang = "pt";
+    alert("lang: " + lang);
     $(".lang").each(function(index, element) {
       $(this).text(arrLang[lang][$(this).attr("key")]);
     });
