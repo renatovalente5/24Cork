@@ -27,7 +27,13 @@ function Pt() {
         "_Stock": "Stock:",
         "_Disponivel" : "Disponivel",
         "_Inisponivel" : "Indisponivel",
-        
+        "_Enviar": "Enviar",
+        "_Nome": "Nome:",
+        "_Email": "Email:",
+        "_Telemóvel": "Telemóvel:",
+        "_Assunto": "Assunto:",
+        "_Mensagem": "Mensagem:",
+
     }
 }; 
 

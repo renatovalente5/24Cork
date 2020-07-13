@@ -27,7 +27,13 @@ function En() {
         "_Stock": "Stock:",
         "_Disponivel" : "In Stock",
         "_Indisponivel" : "Out Stock",
-        
+        "_Enviar": "Send ",
+        "_Nome": "Name:",
+        "_Email": "Mail:",
+        "_Telemóvel": "Phone:",
+        "_Assunto": "Subject:",
+        "_Mensagem": "Message:",
+
     }
 }; 
 
