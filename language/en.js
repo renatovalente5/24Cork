@@ -33,6 +33,14 @@ function En() {
         "_Telemóvel": "Phone:",
         "_Assunto": "Subject:",
         "_Mensagem": "Message:",
+        "_Carteiras": "wallets",
+        "_Acessórios": "Accessories",
+        "_Qualidade": "Quality",
+        "_Portes": "Shipping",
+        "_Qualidade_texto": "Cork products made with the best Detail!",
+        "_Portes_texto": "Free Shipping for purchases over 40€",
+        "_Support_texto": "We are available to answer any questions!",
+        
 
     }
 }; 

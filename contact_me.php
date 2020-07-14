@@ -24,7 +24,7 @@
         $body = "Nome: ".$nome;
         $body.= "\n";
         $body.= "Número: ".$phone1;
-        $body.= "\n\nAssunto: ";
+        $body.= "\n\nMensagem: ";
         $body.= nl2br($mensagem);
      
     // Criar o cabeçalho, assim como a mensagem

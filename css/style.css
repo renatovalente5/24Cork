@@ -115,14 +115,15 @@ ul li {
 
 .ulColums{
     list-style-type: disc; 
-    -webkit-columns: 3;
-    -moz-columns: 3;
-    columns: 3;
-    list-style-position: inside;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+	list-style-position: inside;
+	margin-right: 95px;
 }
 .ulColums ul li{
     float: left;
-    width: 25%; /* helps to determine number of columns, for instance 33.3% displays 3 columns */
+    width: 50%; /* helps to determine number of columns, for instance 33.3% displays 3 columns */
 }
 .ulColums ul{
     list-style-type: disc;
@@ -2291,7 +2292,8 @@ table.table {
 	line-height: 1;
 }
 .footer-block li {
-	padding: 5px 0;
+	/* padding: 5px 0; */
+	padding: 3px 0;
 	color: #000;
 }
 .footer .form-group > input {

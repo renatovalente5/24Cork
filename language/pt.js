@@ -33,6 +33,13 @@ function Pt() {
         "_Telemóvel": "Telemóvel:",
         "_Assunto": "Assunto:",
         "_Mensagem": "Mensagem:",
+        "_Carteiras": "Carteiras",
+        "_Acessórios": "Acessórios",
+        "_Qualidade": "Qualidade",
+        "_Portes": "Portes",
+        "_Qualidade_texto": "Produtos de Cortiça feitos com o melhor Detalhe e Pormenor!",
+        "_Portes_texto": "Portes Grátis para compras acima dos 40€",
+        "_Support_texto": "Estamos disponíveis para lhe esclarecer qualquer dúvida!",
 
     }
 }; 
