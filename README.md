@@ -1,3 +1,3 @@
-# [24Cork](https://renatovalente5.github.io/24Cork)
+# [24Cork](https://24cork.com/)
 
-Website to sell products. All products are made with cork!
+Website to show and sell some cork products. All products are made with cork!
